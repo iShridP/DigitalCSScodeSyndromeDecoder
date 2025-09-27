@@ -1,0 +1,1 @@
+Number of X Stabilisers = 3

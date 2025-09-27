@@ -1,21 +1,29 @@
 import json
 import math
 
+import os
+print(os.getcwd())
+
+script_dir = os.path.dirname(os.path.abspath(__file__))  # folder of the script
+
 #CSS code implementation variables:
-number_of_X_stabilizer_generators = 3
-number_of_Z_stabilizer_generators = 3
-number_of_stabilizer_generators = number_of_X_stabilizer_generators + number_of_Z_stabilizer_generators
-
-number_of_qubits = 7
-
 #import the check matrix for the CSS code
 Check_Matrix = []
 
-with open("Check_Matrix.txt") as f:
+with open(os.path.join(script_dir, "Check_Matrix.txt"),'r') as f:
     for line in f:
         row = list(map(int, line.strip().split()))
         if row != []:
             Check_Matrix.append(row)
+
+with open(os.path.join(script_dir, "Stabiliser_Details.txt"), "r") as f:
+    line = f.readline().strip()
+
+number_of_stabilizer_generators = int(len(Check_Matrix))
+number_of_X_stabilizer_generators = int(line.split()[-1])
+number_of_Z_stabilizer_generators = number_of_stabilizer_generators  - number_of_X_stabilizer_generators
+
+number_of_qubits = int(len(Check_Matrix[0])/2)
 
 # Print matrix
 print("Check Matrix:")
@@ -109,8 +117,8 @@ number_of_X_stabilizer_generators_minus_one = str(number_of_X_stabilizer_generat
 number_of_Z_stabilizer_generators_minus_one = str(number_of_Z_stabilizer_generators - 1)
 number_of_qubits_minus_one = str(number_of_qubits -1)
 two_number_of_qubits = str(2*number_of_qubits)
-two_number_of_Z_stabilizer_generators_minus_one = str(math.pow(2,number_of_Z_stabilizer_generators)-1)
-two_number_of_X_stabilizer_generators_minus_one = str(math.pow(2,number_of_X_stabilizer_generators)-1)
+two_number_of_Z_stabilizer_generators_minus_one = str(int(math.pow(2,number_of_Z_stabilizer_generators))-1)
+two_number_of_X_stabilizer_generators_minus_one = str(int(math.pow(2,number_of_X_stabilizer_generators))-1)
 two_number_of_qubits_minus_one = str(int(two_number_of_qubits) -1)
 two_power_z_stab_minus_one = str(int(math.pow(2,number_of_Z_stabilizer_generators))-1)
 two_power_x_stab_minus_one = str(int(math.pow(2,number_of_X_stabilizer_generators))-1)
@@ -131,13 +139,13 @@ replace["{number of x stab-1}"] = number_of_X_stabilizer_generators_minus_one
 replace["{number of x stab}"] = str(number_of_X_stabilizer_generators)
 
 #Read templates and make new file:
-with open("Templates/Syndrome_Decoder_template.vhd", "r") as f:
+with open(os.path.join(script_dir,"Data_Files/Templates/Syndrome_Decoder_template.vhd"), "r") as f:
     syndrome_template = f.read()
 
-with open("Templates/Testbench_template.vhdl",'r') as f:
+with open(os.path.join(script_dir,"Data_Files/Templates/Testbench_template.vhdl"),'r') as f:
     testbench_template = f.read()
 
-with open("Templates/DUT_template.vhdl",'r') as f:
+with open(os.path.join(script_dir,"Data_Files/Templates/DUT_template.vhdl"),'r') as f:
     DUT_template = f.read()
 
 syndrome_out = syndrome_template
@@ -148,11 +156,11 @@ for key, value in replace.items():
     testbench_out = testbench_out.replace(key,value)
     DUT_out = DUT_out.replace(key,value)
 
-with open("Syndrome_Decoder.vhd", "w") as f:
+with open(os.path.join(script_dir,"Data_Files/Syndrome_Decoder.vhd"), "w") as f:
     f.write(syndrome_out)
-with open("DUT.vhdl","w") as f:
+with open(os.path.join(script_dir,"Data_Files/DUT.vhdl"),"w") as f:
     f.write(DUT_out)
-with open("Testbench.vhdl","w") as f:
+with open(os.path.join(script_dir,"Data_Files/Testbench.vhdl"),"w") as f:
     f.write(testbench_out)
 
 print()

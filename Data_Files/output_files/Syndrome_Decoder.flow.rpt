@@ -1,5 +1,5 @@
 Flow report for Syndrome_Decoder
-Sun Sep 28 00:49:05 2025
+Sun Sep 28 03:47:49 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Sep 28 00:49:05 2025       ;
+; Flow Status                        ; Successful - Sun Sep 28 03:47:49 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Syndrome_Decoder                            ;
 ; Top-level Entity Name              ; DUT                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08DAF484C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 14                                          ;
-;     Total combinational functions  ; 14                                          ;
+; Total logic elements               ; 6                                           ;
+;     Total combinational functions  ; 6                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 20                                          ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/28/2025 00:48:51 ;
+; Start date & time ; 09/28/2025 03:47:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Syndrome_Decoder    ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+------------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value    ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 83972793934189.175900073159048         ; --               ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 83972793934189.175901146015912         ; --               ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --               ; --          ; Testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Testbench                              ; --               ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --               ; --          ; eda_simulation ;
@@ -105,8 +105,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4803 MB             ; 00:00:28                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:28                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4802 MB             ; 00:00:17                           ;
+; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

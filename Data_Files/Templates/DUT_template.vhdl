@@ -13,9 +13,6 @@ architecture DutWrap of DUT is
 			  E_X,E_Z   : out std_logic_vector({number of qubits-1} downto 0));
 	end component syndrome_decoder;
 begin
-
-   -- input/output vector element ordering is critical,
-   -- and must match the ordering in the trace file!
    add_instance: syndrome_decoder port map (
 	SYN => input_vector({number of stab-1} downto 0), 
 	E_X => output_vector({2_number of qubits-1} downto {number of qubits}),

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Syndrome_Decoder
-Sun Sep 28 00:49:05 2025
+Sun Sep 28 03:47:49 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,13 +42,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 28 00:49:05 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 28 03:47:49 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Syndrome_Decoder                            ;
 ; Top-level Entity Name              ; DUT                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 14                                          ;
-;     Total combinational functions  ; 14                                          ;
+; Total logic elements               ; 6                                           ;
+;     Total combinational functions  ; 6                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 20                                          ;
@@ -163,15 +163,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; Gates.vhdl                       ; yes             ; User VHDL File  ; C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl           ;         ;
-; DUT.vhdl                         ; yes             ; User VHDL File  ; C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl             ;         ;
-; Syndrome_Decoder.vhd             ; yes             ; User VHDL File  ; C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Syndrome_Decoder.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                     ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------+---------+
+; Gates.vhdl                       ; yes             ; User VHDL File  ; C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl           ;         ;
+; DUT.vhdl                         ; yes             ; User VHDL File  ; C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl             ;         ;
+; Syndrome_Decoder.vhd             ; yes             ; User VHDL File  ; C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Syndrome_Decoder.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------+
@@ -179,16 +179,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Estimated Total logic elements              ; 14                    ;
+; Estimated Total logic elements              ; 6                     ;
 ;                                             ;                       ;
-; Total combinational functions               ; 14                    ;
+; Total combinational functions               ; 6                     ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 0                     ;
-;     -- 3 input functions                    ; 14                    ;
+;     -- 3 input functions                    ; 6                     ;
 ;     -- <=2 input functions                  ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 14                    ;
+;     -- normal mode                          ; 6                     ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers                             ; 0                     ;
@@ -200,9 +200,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0                     ;
 ;                                             ;                       ;
 ; Maximum fan-out node                        ; input_vector[3]~input ;
-; Maximum fan-out                             ; 7                     ;
-; Total fan-out                               ; 76                    ;
-; Average fan-out                             ; 1.41                  ;
+; Maximum fan-out                             ; 3                     ;
+; Total fan-out                               ; 44                    ;
+; Average fan-out                             ; 0.96                  ;
 +---------------------------------------------+-----------------------+
 
 
@@ -211,8 +211,8 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                ; Entity Name      ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+------------------+--------------+
-; |DUT                               ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 20   ; 0            ; 0          ; |DUT                               ; DUT              ; work         ;
-;    |syndrome_decoder:add_instance| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DUT|syndrome_decoder:add_instance ; syndrome_decoder ; work         ;
+; |DUT                               ; 6 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 20   ; 0            ; 0          ; |DUT                               ; DUT              ; work         ;
+;    |syndrome_decoder:add_instance| ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DUT|syndrome_decoder:add_instance ; syndrome_decoder ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -238,12 +238,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 20                          ;
-; cycloneiii_lcell_comb ; 14                          ;
-;     normal            ; 14                          ;
-;         3 data inputs ; 14                          ;
+; cycloneiii_lcell_comb ; 7                           ;
+;     normal            ; 7                           ;
+;         0 data inputs ; 1                           ;
+;         3 data inputs ; 6                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Average LUT depth     ; 0.92                        ;
 +-----------------------+-----------------------------+
 
 
@@ -262,50 +263,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Sep 28 00:48:50 2025
+    Info: Processing started: Sun Sep 28 03:47:40 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Syndrome_Decoder -c Syndrome_Decoder
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhdl
-    Info (12022): Found design unit 1: Testbench-Behave File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Testbench.vhdl Line: 9
-    Info (12023): Found entity 1: Testbench File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Testbench.vhdl Line: 7
+    Info (12022): Found design unit 1: Testbench-Behave File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Testbench.vhdl Line: 10
+    Info (12023): Found entity 1: Testbench File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Testbench.vhdl Line: 8
 Info (12021): Found 17 design units, including 8 entities, in source file gates.vhdl
-    Info (12022): Found design unit 1: Gates File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 3
-    Info (12022): Found design unit 2: INVERTER-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 45
-    Info (12022): Found design unit 3: AND_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 57
-    Info (12022): Found design unit 4: NAND_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 68
-    Info (12022): Found design unit 5: OR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 79
-    Info (12022): Found design unit 6: NOR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 90
-    Info (12022): Found design unit 7: XOR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 102
-    Info (12022): Found design unit 8: XNOR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 113
-    Info (12022): Found design unit 9: HALF_ADDER-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 124
-    Info (12023): Found entity 1: INVERTER File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 41
-    Info (12023): Found entity 2: AND_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 53
-    Info (12023): Found entity 3: NAND_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 64
-    Info (12023): Found entity 4: OR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 75
-    Info (12023): Found entity 5: NOR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 86
-    Info (12023): Found entity 6: XOR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 98
-    Info (12023): Found entity 7: XNOR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 109
-    Info (12023): Found entity 8: HALF_ADDER File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl Line: 120
+    Info (12022): Found design unit 1: Gates File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 3
+    Info (12022): Found design unit 2: INVERTER-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 45
+    Info (12022): Found design unit 3: AND_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 57
+    Info (12022): Found design unit 4: NAND_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 68
+    Info (12022): Found design unit 5: OR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 79
+    Info (12022): Found design unit 6: NOR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 90
+    Info (12022): Found design unit 7: XOR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 102
+    Info (12022): Found design unit 8: XNOR_2-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 113
+    Info (12022): Found design unit 9: HALF_ADDER-Equations File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 124
+    Info (12023): Found entity 1: INVERTER File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 41
+    Info (12023): Found entity 2: AND_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 53
+    Info (12023): Found entity 3: NAND_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 64
+    Info (12023): Found entity 4: OR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 75
+    Info (12023): Found entity 5: NOR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 86
+    Info (12023): Found entity 6: XOR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 98
+    Info (12023): Found entity 7: XNOR_2 File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 109
+    Info (12023): Found entity 8: HALF_ADDER File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl Line: 120
 Info (12021): Found 2 design units, including 1 entities, in source file dut.vhdl
-    Info (12022): Found design unit 1: DUT-DutWrap File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl Line: 13
-    Info (12023): Found entity 1: DUT File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl Line: 8
+    Info (12022): Found design unit 1: DUT-DutWrap File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 10
+    Info (12023): Found entity 1: DUT File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file syndrome_decoder.vhd
-    Info (12022): Found design unit 1: syndrome_decoder-struct File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Syndrome_Decoder.vhd Line: 11
-    Info (12023): Found entity 1: syndrome_decoder File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Syndrome_Decoder.vhd Line: 7
+    Info (12022): Found design unit 1: syndrome_decoder-struct File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Syndrome_Decoder.vhd Line: 13
+    Info (12023): Found entity 1: syndrome_decoder File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Syndrome_Decoder.vhd Line: 9
 Info (12127): Elaborating entity "DUT" for the top level hierarchy
-Info (12128): Elaborating entity "syndrome_decoder" for hierarchy "syndrome_decoder:add_instance" File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl Line: 23
+Info (12128): Elaborating entity "syndrome_decoder" for hierarchy "syndrome_decoder:add_instance" File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 16
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "output_vector[3]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
+    Warning (13410): Pin "output_vector[4]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
+    Warning (13410): Pin "output_vector[5]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
+    Warning (13410): Pin "output_vector[6]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
+    Warning (13410): Pin "output_vector[10]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
+    Warning (13410): Pin "output_vector[11]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
+    Warning (13410): Pin "output_vector[12]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
+    Warning (13410): Pin "output_vector[13]" is stuck at GND File: C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 14 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Sun Sep 28 00:49:05 2025
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21061): Implemented 6 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4802 megabytes
+    Info: Processing ended: Sun Sep 28 03:47:49 2025
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:17
 
 

@@ -16,22 +16,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "output_vector[3]",
-					"strict" : false
-				},
-				{
-					"name" : "output_vector[4]",
-					"strict" : false
-				},
-				{
-					"name" : "output_vector[5]",
-					"strict" : false
-				},
-				{
-					"name" : "output_vector[6]",
-					"strict" : false
-				},
-				{
 					"name" : "output_vector[7]",
 					"strict" : false
 				},
@@ -44,27 +28,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "output_vector[10]",
-					"strict" : false
-				},
-				{
-					"name" : "output_vector[11]",
-					"strict" : false
-				},
-				{
-					"name" : "output_vector[12]",
-					"strict" : false
-				},
-				{
-					"name" : "output_vector[13]",
-					"strict" : false
-				},
-				{
 					"name" : "input_vector[3]",
-					"strict" : false
-				},
-				{
-					"name" : "input_vector[5]",
 					"strict" : false
 				},
 				{
@@ -72,15 +36,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "input_vector[5]",
+					"strict" : false
+				},
+				{
 					"name" : "input_vector[0]",
 					"strict" : false
 				},
 				{
-					"name" : "input_vector[2]",
+					"name" : "input_vector[1]",
 					"strict" : false
 				},
 				{
-					"name" : "input_vector[1]",
+					"name" : "input_vector[2]",
 					"strict" : false
 				}
 			]

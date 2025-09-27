@@ -16,11 +16,11 @@ type lut_type_z is array (0 to {2^number of z stab-1}) of std_logic_vector({numb
 type lut_type_x is array (0 to {2^number of x stab-1}) of std_logic_vector({number of qubits-1} downto 0);
 
 constant LUT_e_x : lut_type_z := (
-    --LUT_cases_x
+--LUT_cases_x
 );
 
 constant LUT_e_z : lut_type_x := (
-    --LUT_cases_y
+--LUT_cases_y
 );
 
 begin

@@ -9,8 +9,8 @@ entity Testbench is
 end entity;
 architecture Behave of Testbench is
 
-  constant number_of_inputs  : integer := 6;  -- # input bits to your design.
-  constant number_of_outputs : integer := 14;  -- # output bits from your design.
+  constant number_of_inputs  : integer := 6;  
+  constant number_of_outputs : integer := 14; 
 
   component DUT is
    port(input_vector: in std_logic_vector(number_of_inputs-1 downto 0);    
@@ -62,44 +62,33 @@ begin
     File INFILE: text open read_mode is "TRACEFILE.txt";
     FILE OUTFILE: text  open write_mode is "outputs.txt";
 
-    -- bit-vectors are read from the file.
+
     variable input_vector_var: bit_vector (number_of_inputs-1 downto 0);
     variable output_vector_var: bit_vector (number_of_outputs-1 downto 0);
     variable output_mask_var: bit_vector (number_of_outputs-1 downto 0);
 
-    -- for comparison of output with expected-output
     variable output_comp_var: std_logic_vector (number_of_outputs-1 downto 0);
     constant ZZZZ : std_logic_vector(number_of_outputs-1 downto 0) := (others => '0');
 
-    -- for read/write.
+ 
     variable INPUT_LINE: Line;
     variable OUTPUT_LINE: Line;
     variable LINE_COUNT: integer := 0;
-
     
   begin
     while not endfile(INFILE) loop 
-	  -- will read a new line every 5ns, apply input,
-	  -- wait for 1 ns for circuit to settle.
-	  -- read output.
-
 
           LINE_COUNT := LINE_COUNT + 1;
 
-
-	  -- read input at current time.
 	  readLine (INFILE, INPUT_LINE);
           read (INPUT_LINE, input_vector_var);
           read (INPUT_LINE, output_vector_var);
           read (INPUT_LINE, output_mask_var);
-	
-	  -- apply input.
+
           input_vector <= to_std_logic_vector(input_vector_var);
 
-	  -- wait for the circuit to settle 
 	  wait for 10 ns;
 
-	  -- check output.
           output_comp_var := (to_std_logic_vector(output_mask_var) and 
 					(output_vector xor to_std_logic_vector(output_vector_var)));
 	  if (output_comp_var  /= ZZZZ) then
@@ -114,7 +103,6 @@ begin
           write(OUTPUT_LINE, to_bit_vector(output_vector));
           writeline(OUTFILE, OUTPUT_LINE);
 
-	  -- advance time by 4 ns.
 	  wait for 4 ns;
     end loop;
 
