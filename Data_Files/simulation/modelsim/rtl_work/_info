@@ -7,25 +7,25 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/simulation/modelsim
+Z0 dC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/simulation/modelsim
 Eand_2
 Z1 w1756888042
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl
-Z5 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl
+Z4 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl
+Z5 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl
 l0
 L53
 VU7DI`Tzl@EfAQ?4z53E2F2
 !s100 1`nWBgISBZCVoBKm`L3TM3
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1759000770
+Z7 !s110 1759081661
 !i10b 1
-Z8 !s108 1759000770.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl|
-Z10 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Gates.vhdl|
+Z8 !s108 1759081661.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl|
+Z10 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Gates.vhdl|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -48,34 +48,34 @@ R10
 R11
 R12
 Edut
-Z13 w1759000575
+Z13 w1759080383
 R2
 R3
 R0
-Z14 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl
-Z15 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl
+Z14 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl
+Z15 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl
 l0
-L8
-VdN3FXLFnk6NLl^ZXCGIW00
-!s100 llbJBAn]oVQ?mR_I3:dN`3
+L5
+VY4XSFLVSZY>[@D175fa432
+!s100 Mz5>QKfYfzDAHEP^04d351
 R6
 31
 R7
 !i10b 1
 R8
-Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl|
-Z17 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/DUT.vhdl|
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl|
+Z17 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/DUT.vhdl|
 !i113 1
 R11
 R12
 Adutwrap
 R2
 R3
-DEx4 work 3 dut 0 22 dN3FXLFnk6NLl^ZXCGIW00
-l19
-L13
-Vl?WJ;73NgzNaVnbh_[jaT3
-!s100 o[elbfJh_?ilfRGXjhKN01
+DEx4 work 3 dut 0 22 Y4XSFLVSZY>[@D175fa432
+l15
+L10
+VX`Ak]kRdfQBhPan^8J5T21
+!s100 bJA;jzZmBBCHz9?0_Qgc60
 R6
 31
 R7
@@ -303,84 +303,84 @@ R10
 R11
 R12
 Esyndrome_decoder
-Z18 w1759000728
-Z19 DPx4 work 5 gates 0 22 @eB5S<QWaBmXNA4jc;3?G2
-Z20 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R13
+Z18 DPx4 work 5 gates 0 22 @eB5S<QWaBmXNA4jc;3?G2
+Z19 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
 R0
-Z21 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Syndrome_Decoder.vhd
-Z22 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Syndrome_Decoder.vhd
+Z20 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Syndrome_Decoder.vhd
+Z21 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Syndrome_Decoder.vhd
 l0
-L7
-V<^0D?QGeR>zbKIdS?f6IL2
-!s100 EG1a4[LM=S@C[JH]>dWo31
+L9
+V]IcdS`oSc<K<E72_?>_JN3
+!s100 IW`HN8jId];U@o@04HHeQ0
 R6
 31
 R7
 !i10b 1
 R8
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Syndrome_Decoder.vhd|
-Z24 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Syndrome_Decoder.vhd|
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Syndrome_Decoder.vhd|
+Z23 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Syndrome_Decoder.vhd|
 !i113 1
 R11
 R12
 Astruct
+R18
 R19
-R20
 R2
 R3
-DEx4 work 16 syndrome_decoder 0 22 <^0D?QGeR>zbKIdS?f6IL2
-l37
-L11
-Vf=?mCbCI>bzP<dcNDgXFL2
-!s100 XeL@jAZkMe`z[IKB3@h8Y3
+DEx4 work 16 syndrome_decoder 0 22 ]IcdS`oSc<K<E72_?>_JN3
+l42
+L13
+VJF>z0`GFifm35fV4k2^Ef3
+!s100 IBHXTSF19oF@EW9<=`HF;3
 R6
 31
 R7
 !i10b 1
 R8
+R22
 R23
-R24
 !i113 1
 R11
 R12
 Etestbench
-Z25 w1758999691
+R13
 R3
 R2
 R0
-Z26 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Testbench.vhdl
-Z27 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Testbench.vhdl
+Z24 8C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Testbench.vhdl
+Z25 FC:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Testbench.vhdl
 l0
-L7
-V]iKK_Z9L:G9B:i8c]3eFH0
-!s100 bWf8kl8zb90X@P1m>V^K20
+L8
+VR8ZoTJ_^115M<J3B1dlEK2
+!s100 Fn[oj5DY`m<8loJEL5IXi0
 R6
 31
 R7
 !i10b 1
 R8
-Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Testbench.vhdl|
-Z29 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/SyndromeDecoder/Testbench.vhdl|
+Z26 !s90 -reportprogress|300|-93|-work|work|C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Testbench.vhdl|
+Z27 !s107 C:/Users/shrid/OneDrive/Documents/Desktop/Academics/Digital_lab/Syndrome_Decoder/Data_Files/Testbench.vhdl|
 !i113 1
 R11
 R12
 Abehave
 R3
 R2
-DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
-l69
-L9
-VTzPeH=cOMV0gLi?[3oFHB3
-!s100 lhB[MZ7jF`mUeQdKXnc8>3
+DEx4 work 9 testbench 0 22 R8ZoTJ_^115M<J3B1dlEK2
+l59
+L10
+VjT8bmJmHS7:FV3SbOjI8B3
+!s100 <ndC9R1@IfoUd[`5`CzS;3
 R6
 31
 R7
 !i10b 1
 R8
-R28
-R29
+R26
+R27
 !i113 1
 R11
 R12

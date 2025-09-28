@@ -39,7 +39,7 @@ def matrix_mult(H,e): # Me (mod 2)
             element = row[e-1]
         output.append(element%2) #mod 2
 
-    return output
+    return int(''.join(map(str, output)),2)
 
 #compute the LUT elements
 #for e_x or e_z = [0,0, .. 1, ... 0,0] of length (number_of_qubits):
@@ -86,8 +86,8 @@ s_x_index = []
 s_z_index = []
 
 for i in range(number_of_qubits+1):
-    s_x_index.append([matrix_mult(H_x,i),i])
-    s_z_index.append([matrix_mult(H_z,i),i])
+    s_x_index.append([matrix_mult(H_x,i),(1 << (i-1)) if i != 0 else 0])
+    s_z_index.append([matrix_mult(H_z,i),(1 << (i-1)) if i != 0 else 0])
 
 #now s_z and s_x indexes are indexed accordingly to e_x and e_z
 

@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Sep 28 03:47:49 2025
+Analysis & Synthesis Status : Successful - Sun Sep 28 23:16:31 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Syndrome_Decoder
 Top-level Entity Name : DUT
 Family : MAX 10
-Total logic elements : 6
-    Total combinational functions : 6
+Total logic elements : 14
+    Total combinational functions : 14
     Dedicated logic registers : 0
 Total registers : 0
 Total pins : 20
