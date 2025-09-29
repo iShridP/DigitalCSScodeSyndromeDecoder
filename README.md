@@ -20,11 +20,11 @@ A corresponding **testbench** can be used for local simulation and verification 
 - **Fully parameterizable**: Works for any number of qubits and stabilizer generators.  
 - **Automated LUT generation**: Produces error-to-syndrome mappings for both X and Z errors.  
 - **VHDL code generation**: Generates RTL-ready files for FPGA implementation:  
-  - `Syndrome_Decoder.vhd` – main decoder module  
-  - `DUT.vhdl` – device under test wrapper  
-  - `Testbench.vhdl` – testbench for simulation  
+  - `Syndrome_Decoder.vhd` : decoder module  
+  - `DUT.vhdl` : DUT wrapper  
+  - `Testbench.vhdl` : testbench for simulation through tracefile  
 - **Supports single-qubit error correction** and no-error cases.  
-- **Python Generating Code**: Generate_Files.py automatically generates all vhd/vhdl files according to provided check_matrix
+- **Python Generating Code**: Generate_Files.py automatically will generate all the vhd/vhdl files according to provided check_matrix in the text file
 
 ## How to use:
 
