@@ -29,8 +29,10 @@ A corresponding **testbench** can be used for local simulation and verification 
 ## How to use:
 
 - Edit the Check_Matrix.txt file with the Check matrix of custom CSS code implementation
+- Edit the Stabiliser_Details.txt to input details of Stabiliser Generators
 - Edit the tracefile if required for local simulations
 - Run Generate_Files.py
 - The three custom VHDL codes will be generated
 - For analysis through Quartus: ensure Tracefile.txt is valid according to Code testcases, compile Testbench+Tracefile is added, and that DUT is set as top level entity
 
+The GitHub repository aldready demostrates the implementation of **Steane Code**. 
